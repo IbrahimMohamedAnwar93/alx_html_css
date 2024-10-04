@@ -86,5 +86,53 @@ body {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 250px;
+  margin-bottom: 185px;
+}
+
+/* Now the pros section */
+
+.pros-section {
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.pros-section span {
+  color: #C271FF;
+}
+
+.pros-list {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  max-width: 1200px;
+  margin: 120px auto;
+}
+
+.pro-item {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.pro-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.pro-item h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.pro-item p {
+  font-size: 14px;
+  color: #fff;
+  font-style: italic;
 }
