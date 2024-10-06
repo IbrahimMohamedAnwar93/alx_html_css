@@ -303,3 +303,240 @@
     font-size: 14px; /* Set font size */
     color: #ccc; /* Lighter color for the copyright text */
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .navbar .nav-links {
+        flex-direction: column; /* Stack nav links */
+        margin-top: 10px; /* Space above links */
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Space between links */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    .what-we-do h2 {
+        font-size: 2rem; /* Reduce section title size */
+    }
+
+    .what-we-do p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .results h2 {
+        font-size: 28px; /* Reduce title size in results section */
+    }
+
+    .results p {
+        font-size: 14px; /* Reduce paragraph size */
+    }
+
+    .contact-us h2 {
+        font-size: 2rem; /* Reduce contact section title size */
+    }
+
+    .contact-us form {
+        padding: 15px; /* Reduce padding in the form */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer content */
+        align-items: center; /* Center items */
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+}
+
+/* Results Section */
+.results {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('imgs/back-res.png') no-repeat center center/cover;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    filter: brightness(1.2); /* Adjust brightness if needed */
+}
+
+.results h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.results p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.result-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat {
+    position: relative; /* Set relative positioning to control absolute text */
+    margin: 45px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stat:hover {
+    transform: translateY(-10px);
+}
+
+/* Style for the Images */
+.stat img {
+    width: 150px; /* Adjust size based on your image dimensions */
+    height: auto;
+    border-radius: 10px; /* Optional: apply rounded corners if needed */
+}
+
+/* Text Overlay Styling */
+.stat-text {
+    position: absolute; /* Position text over the image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    text-align: center;
+}
+
+.stat-text .percentage {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stat-text .description {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* Contact-us Section */
+.contact-us {
+    color: white; /* Keep text color for readability */
+    padding: 60px 20px; /* Add padding around the section */
+    text-align: center; /* Center text within the section */
+}
+
+.contact-us h2 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-us form {
+    max-width: 500px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Inner padding for the form */
+    background: rgba(210, 210, 210, 0.5); /* Semi-transparent background for contrast */
+    border-radius: 8px; /* Rounded corners for the form */
+}
+
+.contact-us label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 8px; /* Space below labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 90%; /* Full width inputs */
+    padding: 10px; /* Inner padding for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.contact-us textarea {
+    resize: none; /* don't resize textarea */
+}
+
+.contact-us button {
+    background-color: #e63946; /* Change this color as per your design */
+    color: white; /* White text color */
+    padding: 12px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
+}
+
+.contact-us button:hover,
+.contact-us button:active {
+    opacity: 0.9; /* Change opacity on hover/active */
+}
+
+/* Footer section  */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for the footer */
+    text-align: center; /* Center text for copyright */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and social links */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the content */
+}
+
+.logo img {
+    width: 100px; /* Set width for logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-links {
+    margin-left: auto; /* Push social links to the right */
+}
+
+.social-links a {
+    margin: 0 15px; /* Spacing between social icons */
+    display: inline-block; /* Ensure proper spacing and alignment */
+}
+
+.social-links img {
+    width: 30px; /* Set width of social media icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover img {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.footer p {
+    margin: 10px 0 0; /* Space above copyright text */
+    font-size: 14px; /* Set font size */
+    color: #ccc; /* Lighter color for the copyright text */
+}
